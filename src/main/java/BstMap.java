@@ -38,7 +38,7 @@ public class BstMap<K extends Comparable<K>, V> {
     /** Removes the given key from the map. */
     public void remove(K key) {
         if (this.root != null) {
-            this.root.remove(key);
+            this.root = this.root.remove(key);
         }
     }
 
